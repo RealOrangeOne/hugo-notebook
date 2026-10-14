@@ -11,6 +11,12 @@
   </div>
 </section>
 
+{{ with .Content }}
+<section class="content">
+  <div class="ruled">{{ . }}</div>
+</section>
+{{ end }}
+
 <section class="posts">
   <h2 class="section-label">{{ partial "icon.html" "pencil" }}<span>Latest entries</span></h2>
   <div class="card-grid">
