@@ -11,6 +11,7 @@
     <div class="page-col">
       <main class="paper">
         {{ block "main" . }}{{ end }}
+        {{ partial "main-end.html" . }}
       </main>
       {{ partial "footer.html" . }}
     </div>
