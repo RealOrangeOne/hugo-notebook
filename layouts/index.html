@@ -11,9 +11,12 @@
   </div>
 </section>
 
-{{ with .Content }}
+{{ if .Content }}
 <section class="content">
-  <div class="ruled">{{ . }}</div>
+  <div class="ruled">
+    {{ .Content }}
+    {{ partial "content-end.html" . }}
+  </div>
 </section>
 {{ end }}
 
